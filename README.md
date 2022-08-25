@@ -19,7 +19,7 @@ The data in this task was analysed on jupyter notebook using ;
 - matplotlib
 - seaborn
 
-The [data](voting_candidates.ipynb) was read into a dataframe
+The [data](https://github.com/BusiM1172/Task1/blob/76bdc6b5a17649ec2fdf496e5572c26d1b805d1f/voting_candidates.ipynb) was read into a dataframe
 * df= pd.read_csv('voting_candidate.csv')
 
 ### 2.1 Data Preparation
