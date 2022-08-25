@@ -11,5 +11,13 @@ The data in this task was analysed on jupyter notebook using ;
 - matplotlib
 - seaborn
 
+The data was read into a dataframe
+
 ### Data Cleaning
-We first ensure that the data is prepared for statistical analysis
+We first ensured that the data was prepared for statistical analysis. Data types were determined and were found to be as required. There were also no blank spaces nor NaN values in the data set. However, columns containing candidates' names and surnames were combined to explicitly differentiate between candidates whi similar names or surnames.
+
+### Assessing the Gender numbers in Electoral Candidates
+- Plotting a bar chart to see the gender difference in the election candidancy
+  sns.histplot(x= 'Gender', data = df)
+- Determining the difference in candidancy between males and females in the different provinces
+  sns.histplot(x= 'Province', data = df, hue='Gender',multiple = 'dodge')
