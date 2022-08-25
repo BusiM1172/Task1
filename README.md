@@ -2,11 +2,11 @@
 ## TABLE OF CONTENTS
 1. INTRODUCTION
 2. DATA ANALYSIS
-2.1 Data Preparation
-2.2 Assessing the Gender numbers in Electoral Candidates
-2.2.1 Findings
-2.3 Assessing the Age representation in the Electroral Candidates
-2.3.1 Findings
+     2.1 Data Preparation
+     2.2 Assessing the Gender numbers in Electoral Candidates
+          2.2.1 Findings
+     2.3 Assessing the Age representation in the Electroral Candidates
+          2.3.1 Findings
      
 ## 1. Introduction
 This project analyses the Municipal Election candidates for the year 2021. We seek to investigate how far South Africa has come in terms of the levels of representation between genders and age groups in politics. The data set consists of 95 427 records of candidates' names, surnames, ages, political party, province, municipality and ward
@@ -47,3 +47,4 @@ We first ensured that the data was prepared for statistical analysis. Data types
     * The youngest candidate is 18 years old and the oldest 93 year old. 
     * The average age of the candidates is 44 years. 
     * The age distribution of this candidate list can be viewed as a healthy one that would ensure continuity. 
+A report with all the visualisations and conclusions was compiled
