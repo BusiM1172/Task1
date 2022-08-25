@@ -2,11 +2,11 @@
 ## TABLE OF CONTENTS
 1. INTRODUCTION
 2. DATA ANALYSIS
-  2.1 Data Preparation
-  2.2 Assessing the Gender numbers in Electoral Candidates
-     2.2.1 Findings
-  2.3 Assessing the Age representation in the Electroral Candidates
-     2.3.1 Findings
+2.1 Data Preparation
+2.2 Assessing the Gender numbers in Electoral Candidates
+2.2.1 Findings
+2.3 Assessing the Age representation in the Electroral Candidates
+2.3.1 Findings
      
 ## 1. Introduction
 This project analyses the Municipal Election candidates for the year 2021. We seek to investigate how far South Africa has come in terms of the levels of representation between genders and age groups in politics. The data set consists of 95 427 records of candidates' names, surnames, ages, political party, province, municipality and ward
@@ -30,7 +30,7 @@ We first ensured that the data was prepared for statistical analysis. Data types
     * df.nunique()
 - The male and female count was determined for the ENTIRE election
     * sns.histplot(x= 'Gender', data = df)
-- The male and female count was also determined for the different [provinces](https://github.com/BusiM1172/Task1/blob/76bdc6b5a17649ec2fdf496e5572c26d1b805d1f/voting_candidates.ipynb)
+- The male and female count was also determined for the different provinces
  - It was found that there was a higher male candidate count in the political parties. A few exceptions exist in some small parties, namely;
     * Agency for New Change
     * Allied Movement for Change
