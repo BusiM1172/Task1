@@ -13,11 +13,24 @@ The data in this task was analysed on jupyter notebook using ;
 
 The data was read into a dataframe
 
-### Data Cleaning
-We first ensured that the data was prepared for statistical analysis. Data types were determined and were found to be as required. There were also no blank spaces nor NaN values in the data set. However, columns containing candidates' names and surnames were combined to explicitly differentiate between candidates whi similar names or surnames.
+### Data Preparation
+We first ensured that the data was prepared for statistical analysis. Data types were determined and were found to be as required. There were also no blank spaces nor NaN values in the data set. However, columns containing candidates' names and surnames were combined to explicitly differentiate between candidates with similar names or surnames.
 
 ### Assessing the Gender numbers in Electoral Candidates
-- Plotting a bar chart to see the gender difference in the election candidancy
-  sns.histplot(x= 'Gender', data = df)
-- Determining the difference in candidancy between males and females in the different provinces
+- The number of unique individuals (taking care of the fact that some may have stood for more than one position) who stood for the elections
+-   df.nunique()
+- The male and female count was determined for the ENTIRE election
+    sns.histplot(x= 'Gender', data = df)
+- The male and female count was also determined for the different provinces
   sns.histplot(x= 'Province', data = df, hue='Gender',multiple = 'dodge')
+- The male and female count was also determined for the different political parties
+  
+  ### Findings
+ - There was generally a higher count of males compared to females in all provinces. 
+ - The 3 provinces with significantly higher male representation are Gauteng, KwaZulu Natal and the Western Cape. The Northern Cape has the smallest difference between the genders.  The table below shows that 62% of the candidates were male. 
+ - It was found that there was a higher male candidate count in the political parties. A few exceptions exist in some small parties, namely;
+    * Agency for New Change
+    * Allied Movement for Change
+    * Batho Pele Movement
+
+### Assessing the Age representation in the Electroral Candidates
