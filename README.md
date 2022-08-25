@@ -12,17 +12,18 @@ The data in this task was analysed on jupyter notebook using ;
 - seaborn
 
 The data was read into a dataframe
+* df= pd.read_csv('voting_candidate.csv')
 
 ### Data Preparation
 We first ensured that the data was prepared for statistical analysis. Data types were determined and were found to be as required. There were also no blank spaces nor NaN values in the data set. However, columns containing candidates' names and surnames were combined to explicitly differentiate between candidates with similar names or surnames.
 
 ### Assessing the Gender numbers in Electoral Candidates
 - The number of unique individuals (taking care of the fact that some may have stood for more than one position) who stood for the elections
--   df.nunique()
+    * df.nunique()
 - The male and female count was determined for the ENTIRE election
-    sns.histplot(x= 'Gender', data = df)
+    * sns.histplot(x= 'Gender', data = df)
 - The male and female count was also determined for the different provinces
-  sns.histplot(x= 'Province', data = df, hue='Gender',multiple = 'dodge')
+    * sns.histplot(x= 'Province', data = df, hue='Gender',multiple = 'dodge')
 - The male and female count was also determined for the different political parties
   
   ### Findings
@@ -34,3 +35,13 @@ We first ensured that the data was prepared for statistical analysis. Data types
     * Batho Pele Movement
 
 ### Assessing the Age representation in the Electroral Candidates
+- The distribution of the ages of all the candidates was determined
+    * grouped_age= df.groupby(['Age']).count()
+    * grouped_age.plot(x='Age', y='Name', figsize=(10, 8), kind='scatter')
+- The distribution of age in the different political parties was determined
+    * sns.barplot(x ='Party/Indep', y ='Name', data= grouped_party1, hue ='Gender')
+
+    ###Findings
+    * The youngest candidate is 18 years old and the oldest 93 year old. 
+    * The average age of the candidates is 44 years. 
+    * The age distribution of this candidate list can be viewed as a healthy one that would ensure continuity. 
